@@ -4,7 +4,7 @@
 ### Contributors
 |나승원|김연철|김익균|박효빈|
 |----|----|----|----|
-|**[lala4768](https://github.com/lala4768)**|**[???](https://github.com/)**|**[???](https://github.com/)**|**[parlankton](https://github.com/parlankton)**|
+|**[lala4768](https://github.com/lala4768)**|**[???](https://github.com/)**|**[iq0210](https://github.com/iq0210)**|**[parlankton](https://github.com/parlankton)**|
 
 
 <br>
