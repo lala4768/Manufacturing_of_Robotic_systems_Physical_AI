@@ -23,3 +23,22 @@
 
   * Issacsim 환경에서 Go2 사족보행로봇을 업로드하고 주어진 코스를 완주
   * 가상 환경에서 구현한 코드를 실제 로봇에 적용시키고 그 과정에서 발생하는 SimtoReal Gap 문제를 해결해 주어진 코스를 완주
+
+    
+<br>
+
+
+# Flow Chart
+`Default lane mode` → `traffic light`→`parking` → `Stop tunnel`
+<img width="720" height="464" alt="image" src="https://github.com/user-attachments/assets/4e189172-5c6c-4343-bded-6bf15d308db7" />
+
+
+<br>
+
+
+## 사용 기술 및 장비
+
+* **언어 및 환경**: Python 3.10, Ubuntu 22.04, ROS2 Humble
+* **도구**: Colab, VSCode
+* **로봇 하드웨어**: X
+* **로봇 소프트웨어**: Gazebo
