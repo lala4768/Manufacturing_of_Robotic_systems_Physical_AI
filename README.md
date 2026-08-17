@@ -45,3 +45,11 @@
 * **도구**: VSCode
 * **로봇 하드웨어**: Go2 Quadruped robot
 * **로봇 소프트웨어**: Issacsim, Docker
+
+
+<br>
+
+## 주요 기능
+
+1. **차선 감지**
+* /camera/image_raw 토픽으로 실시간 이미지 입력
