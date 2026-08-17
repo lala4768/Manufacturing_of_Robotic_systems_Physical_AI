@@ -35,8 +35,6 @@
 * **Real World**
   * `Robot bringup` → `Driving the course(with obstacle avoidance)`
 
-<img width="720" height="464" alt="image" src="https://github.com/user-attachments/assets/4e189172-5c6c-4343-bded-6bf15d308db7" />
-
 
 <br>
 
@@ -46,4 +44,4 @@
 * **언어 및 환경**: Python 3.10, Ubuntu 22.04, ROS2 Humble
 * **도구**: VSCode
 * **로봇 하드웨어**: Go2 Quadruped robot
-* **로봇 소프트웨어**: Issacsim
+* **로봇 소프트웨어**: Issacsim, Docker
