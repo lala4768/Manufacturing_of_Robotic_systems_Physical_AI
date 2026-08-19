@@ -38,6 +38,12 @@ class SimObstacleDetector(Node):
         self.current_twist.linear.x = 25.0
         self.current_twist.angular.z = 0.0
 
+        # -------------------------
+        # initial right-turn ignore
+        # -------------------------
+        self.start_time = time.time()
+        self.ignore_right_turn_duration = 20.0
+
         self.timer = self.create_timer(0.1, self.timer_callback)
 
         # -------------------------
@@ -101,7 +107,7 @@ class SimObstacleDetector(Node):
 
         # distances
         zA = m2p(0.25)          # near
-        zB = m2p(1.5)          # mid
+        zB = m2p(3.0)          # mid
 
         def cnt(r1, r2, c1, c2):
             roi = self._safe_slice(grid, r1, r2, c1, c2)
@@ -185,9 +191,9 @@ class SimObstacleDetector(Node):
             diff = cntA_left - cntA_right
 
             if diff > 0:
-                self.current_twist.angular.z = -1.0
+                self.current_twist.angular.z = -1.5
             elif diff < 0:
-                self.current_twist.angular.z = 1.0
+                self.current_twist.angular.z = 1.5
             else:
                 self.current_twist.angular.z = 0.5
 
@@ -198,16 +204,16 @@ class SimObstacleDetector(Node):
         # =================================================
         if cntB_center > 0:
 
-            self.current_twist.linear.x = 0.5
+            self.current_twist.linear.x = 0.4
 
             diff = cntB_left - cntB_right
 
             if diff > 0:
-                self.current_twist.angular.z = -0.4
+                self.current_twist.angular.z = -2.0
             elif diff < 0:
-                self.current_twist.angular.z = 0.4
+                self.current_twist.angular.z = 2.0
             else:
-                self.current_twist.angular.z = 0.4
+                self.current_twist.angular.z = 2.0
 
             return
 
@@ -247,6 +253,10 @@ class SimObstacleDetector(Node):
 
         self.last_int_time = now
 
+        if time.time() - self.start_time < self.ignore_right_turn_duration:
+            if self.current_twist.angular.z < 0:
+                self.current_twist.angular.z = 0.0
+                
         self.cmd_pub.publish(self.current_twist)
 
 
