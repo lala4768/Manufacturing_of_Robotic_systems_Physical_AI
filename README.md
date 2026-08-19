@@ -70,8 +70,8 @@
 * Simulation 코드를 실제 로봇에 적용시키면서 발생하는 SimtoReal 문제 직면 후 주행 알고리즘 수정, 파라미터 조정 등의 방법을 활용해 이를 해결
 * 실제 로봇으로 주행했을 때 course 은1 2위, course 2은 1위로 완주
 
-**Real World Course 1**
+* **Real World Course 1**
 <img width="654" height="368" alt="map1 real world gif" src="https://github.com/user-attachments/assets/a23dd6cf-b8c3-44a5-8e4c-964b1a3b3e96" />
 
-**Real World Course 2**
+* **Real World Course 2**
 <img width="654" height="368" alt="map2 real world gif" src="https://github.com/user-attachments/assets/ea94a8b1-e694-470a-80ce-cc8431d86bd9" />
