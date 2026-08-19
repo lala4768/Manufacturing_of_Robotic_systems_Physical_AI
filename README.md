@@ -1,3 +1,4 @@
+<img width="654" height="368" alt="map1 real world gif" src="https://github.com/user-attachments/assets/5354cb99-fc87-4ef1-bb30-f26cafbcbc65" />
 # Manufacturing_of_Robotics_Physical_AI
 로봇 제조 실습 프로젝트 1
 
@@ -57,6 +58,12 @@
 * 로봇 회전시 라이다가 탐지한 장애물 거리가 매우 가까울 경우 정지하는 로직 추가
 * 좌우로 동일한 각도에 라이다가 장애물을 인지하면 일정 거리 후진하고 다시 주행하는 로직 추가
 * 회피 주행시 일반 주행보다 직선 주행 속도를 줄여 회피를 보다 자연스럽게 하도록 로직 설계
+
+**Real World Course 1**
+<img width="654" height="368" alt="map1 real world gif" src="https://github.com/user-attachments/assets/a23dd6cf-b8c3-44a5-8e4c-964b1a3b3e96" />
+
+**Real World Course 2**
+<img width="654" height="368" alt="map2 real world gif" src="https://github.com/user-attachments/assets/ea94a8b1-e694-470a-80ce-cc8431d86bd9" />
 
 
 <br>
